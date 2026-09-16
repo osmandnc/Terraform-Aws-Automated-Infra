@@ -12,7 +12,6 @@ terraform {
     bucket       = "osman-tf-state-2026"
     key          = "infra-project/terraform.tfstate"
     region       = "eu-central-1"
-    use_lockfile = true
     encrypt      = true
   }
 }
