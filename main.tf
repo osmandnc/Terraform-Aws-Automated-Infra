@@ -27,7 +27,7 @@ resource "aws_security_group" "web_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
- 
+
   ingress {
     description = "SSH Trafigi"
     from_port   = 22
@@ -37,7 +37,7 @@ resource "aws_security_group" "web_sg" {
   }
 
 
- egress {
+  egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
